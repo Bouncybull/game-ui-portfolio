@@ -11,12 +11,31 @@
             "id": "7d21dd9ee8aff103",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "canvas",
               "state": {
-                "file": "Assets/Images/Artboard.svg"
+                "file": "ClipBoard.canvas",
+                "viewState": {
+                  "x": -75.43258116781305,
+                  "y": 577.6862510616457,
+                  "zoom": 0.3333333333333334
+                }
               },
-              "icon": "lucide-image",
-              "title": "Artboard"
+              "icon": "lucide-layout-dashboard",
+              "title": "ClipBoard"
+            }
+          },
+          {
+            "id": "14912b52bdc6a340",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.youtube.com/watch?v=7f8e5IiUkeo",
+                "title": "How I Published My Obsidian Notes Website For Free 🏡 Digital Garden - YouTube",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "How I Published My Obsidian Notes Website For Free 🏡 Digital Garden - YouTube"
             }
           }
         ]
@@ -178,14 +197,18 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "publish:Publish changes...": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
   "active": "7d21dd9ee8aff103",
   "lastOpenFiles": [
-    "ClipBoard.canvas",
     "Untitled.md",
+    "Welcome.md",
+    "ClipBoard.canvas",
     "Assets/Images/Artboard.svg",
+    "Assets/Images/Alan Wake 2 Mind Palance.png",
     "Assets/Images/Artboard.af~lock~",
     "Assets/Images/Artboard.af",
     "Assets/Images/Dragon Quest 7 Bag Menu.png",
@@ -195,9 +218,7 @@
     "Assets/Images/Valkyria Chronicles 4 Main Menu.png",
     "Assets/Images/Afterparty Title Screen.png",
     "Assets/Images/Persona 5 Royal Main Menu.png",
-    "Assets/Images/Alan Wake 2 Mind Palance.png",
     "Assets/Images/Ni No Kuni Wrath of the White Witch Title Screen.png",
-    "Welcome.md",
     "Assets/Images",
     "Assets",
     "create a link.md",

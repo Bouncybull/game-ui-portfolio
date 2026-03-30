@@ -3,8 +3,11 @@ import * as THREE from 'three';
 
 const canvas = document.querySelector("#experience-canvas");
 const sizes ={
-  width:  window.innerWidth,
-  height: window.innerHeight
+  zoom_out:  1.5,
+  zoom_in: 0.5,
+  width: window.innerWidth,
+  height: window.innerHeight,
+  switchSize: false 
 }
 
 const scene = new THREE.Scene();
@@ -26,10 +29,38 @@ scene.add( cube );
 
 camera.position.z = 5;
 
-// Event Listeners
+// Event Listeners & Functions 
+
+document.body.addEventListener("keypress", (event)=> {
+  if(event.key=="q" || event.key=="Q")
+  {
+    pauseMenu();
+  }
+})
+
+const pauseMenu = () =>{
+  console.log("boop");
+  //sizes.width = window.innerWidth/sizes.zoom_out;
+  //sizes.height = window.innerHeight/sizes.zoom_out;
+  sizes.switchSize = !sizes.switchSize;
+  resizeWindow();
+}
+
 window.addEventListener("resize", ()=>{
-  sizes.width = window.innerWidth;
-  sizes.height = window.innerHeight;
+  resizeWindow();
+})
+
+const resizeWindow = () =>{
+  if (sizes.switchSize)
+  {
+    sizes.width = window.innerWidth/sizes.zoom_out;
+    sizes.height = window.innerHeight/sizes.zoom_out;
+  }
+  else
+  {
+    sizes.width = window.innerWidth;
+    sizes.height = window.innerHeight;
+  }
 
   // Update camera
   camera.aspect = sizes.width / sizes.height;
@@ -38,7 +69,7 @@ window.addEventListener("resize", ()=>{
   // Updater renderer
   renderer.setSize(sizes.width, sizes.height);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-})
+}
 
 const render = () =>{
   cube.rotation.x += 0.01;

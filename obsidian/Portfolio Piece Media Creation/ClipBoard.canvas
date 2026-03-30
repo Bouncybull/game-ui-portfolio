@@ -2,7 +2,6 @@
 	"nodes":[
 		{"id":"a742ebc3fe6d407b","type":"group","x":-680,"y":80,"width":2800,"height":600,"label":"Title Screens"},
 		{"id":"dcd0eb87682b38d7","type":"group","x":-680,"y":760,"width":2240,"height":520,"label":"Main Menu's"},
-		{"id":"dc5ab088dad6efd5","type":"file","file":"Assets/Images/Artboard.svg","x":-276,"y":-118,"width":400,"height":111},
 		{"id":"95b4b7bb9cb61d40","type":"file","file":"Assets/Images/Cuphead Title Screen.png","x":-640,"y":120,"width":400,"height":225},
 		{"id":"5eb5a521b7e8aae5","type":"file","file":"Assets/Images/Dispatch Title Screen.png","x":-640,"y":400,"width":400,"height":225},
 		{"id":"c8b74dacf05026c3","type":"file","file":"Assets/Images/Hi-Fi Rush Title Screen.png","x":-200,"y":120,"width":400,"height":225},
