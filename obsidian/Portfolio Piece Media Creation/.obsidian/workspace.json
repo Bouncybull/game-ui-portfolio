@@ -4,24 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "aed44ea94aff338e",
+        "id": "ec5f88f76e91532e",
         "type": "tabs",
         "children": [
           {
-            "id": "3edad07155206579",
+            "id": "7d21dd9ee8aff103",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "image",
               "state": {
-                "file": "ClipBoard.canvas",
-                "viewState": {
-                  "x": -76,
-                  "y": -62.5,
-                  "zoom": 0
-                }
+                "file": "Assets/Images/Artboard.svg"
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "ClipBoard"
+              "icon": "lucide-image",
+              "title": "Artboard"
             }
           }
         ]
@@ -97,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClipBoard.canvas",
+                "file": "Assets/Images/Artboard.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ClipBoard"
+              "title": "Backlinks for Artboard"
             }
           },
           {
@@ -172,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -186,11 +181,23 @@
       "bases:Create new base": false
     }
   },
-  "active": "1990627047fd1c09",
+  "active": "7d21dd9ee8aff103",
   "lastOpenFiles": [
-    "Welcome.md",
-    "Assets/Images/Artboard.svg",
     "ClipBoard.canvas",
+    "Untitled.md",
+    "Assets/Images/Artboard.svg",
+    "Assets/Images/Artboard.af~lock~",
+    "Assets/Images/Artboard.af",
+    "Assets/Images/Dragon Quest 7 Bag Menu.png",
+    "Assets/Images/Schermafbeelding 2026-02-11 115357 1 1.png",
+    "Assets/Images/Cuphead Title Screen.png",
+    "Assets/Images/detective FACE! Title Screen.png",
+    "Assets/Images/Valkyria Chronicles 4 Main Menu.png",
+    "Assets/Images/Afterparty Title Screen.png",
+    "Assets/Images/Persona 5 Royal Main Menu.png",
+    "Assets/Images/Alan Wake 2 Mind Palance.png",
+    "Assets/Images/Ni No Kuni Wrath of the White Witch Title Screen.png",
+    "Welcome.md",
     "Assets/Images",
     "Assets",
     "create a link.md",

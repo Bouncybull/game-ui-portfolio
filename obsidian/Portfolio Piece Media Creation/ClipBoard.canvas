@@ -1,6 +1,25 @@
 {
 	"nodes":[
-		{"id":"dc5ab088dad6efd5","type":"file","file":"Assets/Images/Artboard.svg","x":-276,"y":-118,"width":400,"height":111}
+		{"id":"a742ebc3fe6d407b","type":"group","x":-680,"y":80,"width":2800,"height":600,"label":"Title Screens"},
+		{"id":"dcd0eb87682b38d7","type":"group","x":-680,"y":760,"width":2240,"height":520,"label":"Main Menu's"},
+		{"id":"dc5ab088dad6efd5","type":"file","file":"Assets/Images/Artboard.svg","x":-276,"y":-118,"width":400,"height":111},
+		{"id":"95b4b7bb9cb61d40","type":"file","file":"Assets/Images/Cuphead Title Screen.png","x":-640,"y":120,"width":400,"height":225},
+		{"id":"5eb5a521b7e8aae5","type":"file","file":"Assets/Images/Dispatch Title Screen.png","x":-640,"y":400,"width":400,"height":225},
+		{"id":"c8b74dacf05026c3","type":"file","file":"Assets/Images/Hi-Fi Rush Title Screen.png","x":-200,"y":120,"width":400,"height":225},
+		{"id":"067ad39686724965","type":"file","file":"Assets/Images/Hi-Fi Rush Title Screen 2.png","x":-200,"y":400,"width":400,"height":225},
+		{"id":"5e77ed79b3ed653c","type":"file","file":"Assets/Images/Afterparty Title Screen.png","x":240,"y":120,"width":400,"height":225},
+		{"id":"bcb3fec68410d7b7","type":"file","file":"Assets/Images/Persona 5 Royal Title Screen.png","x":240,"y":400,"width":400,"height":225},
+		{"id":"b50eab201b2746bc","type":"file","file":"Assets/Images/Nier Automata Title Screen.png","x":680,"y":120,"width":400,"height":225},
+		{"id":"4b2ef1431d2432f4","type":"file","file":"Assets/Images/detective FACE! Title Screen.png","x":680,"y":400,"width":375,"height":225},
+		{"id":"932cf34db592053a","type":"file","file":"Assets/Images/Metaphor Re Fantazio Title Screen.png","x":1120,"y":120,"width":400,"height":225},
+		{"id":"61ee2d8b7c678971","type":"file","file":"Assets/Images/Red Dead Redemption II Title Screen.png","x":1120,"y":400,"width":400,"height":225},
+		{"id":"9c09cf8d17e1a505","type":"file","file":"Assets/Images/Spider-Man Miles Morales Title Screen.png","x":1560,"y":120,"width":400,"height":225},
+		{"id":"f9b3c6cc7a285cb5","type":"file","file":"Assets/Images/Ni No Kuni Wrath of the White Witch Title Screen.png","x":1560,"y":400,"width":400,"height":225},
+		{"id":"4d5bf5eac52a0c59","type":"file","file":"Assets/Images/Persona 5 Royal Main Menu.png","x":-640,"y":815,"width":400,"height":225},
+		{"id":"e24662725a195738","type":"file","file":"Assets/Images/Metaphor ReFantazio Main Menu.png","x":-200,"y":815,"width":400,"height":225},
+		{"id":"c7f389878b4fa0fd","type":"file","file":"Assets/Images/Valkyria Chronicles 4 Main Menu.png","x":240,"y":815,"width":400,"height":225},
+		{"id":"a1c8358c1edf1b1e","type":"file","file":"Assets/Images/Alan Wake 2 Mind Palance.png","x":680,"y":815,"width":400,"height":400},
+		{"id":"bfb979af3feba300","type":"file","file":"Assets/Images/Dragon Quest 7 Bag Menu.png","x":1120,"y":814,"width":400,"height":227}
 	],
 	"edges":[]
 }
