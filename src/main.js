@@ -1,5 +1,6 @@
 import "./style.scss";
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const canvas = document.querySelector("#experience-canvas");
 const sizes ={
@@ -25,9 +26,21 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+// scene.add( cube );
 
-camera.position.z = 5;
+camera.position.z = 10;
+
+
+const loader = new GLTFLoader();
+loader.load('./models/practice.gltf', (gltf) => {
+  const appartment = gltf.scene;
+  appartment.traverse((child) => {
+    if (child.isMesh) {
+      child.geometry.center();
+    }
+  });
+  scene.add(appartment);
+});
 
 // Event Listeners & Functions 
 
