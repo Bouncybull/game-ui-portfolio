@@ -28,7 +28,7 @@ const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
 // scene.add( cube );
 
-camera.position.z = 10;
+camera.position.z = 100;
 
 
 const loader = new GLTFLoader();
@@ -53,8 +53,8 @@ document.body.addEventListener("keypress", (event)=> {
 
 const pauseMenu = () =>{
   console.log("boop");
-  //sizes.width = window.innerWidth/sizes.zoom_out;
-  //sizes.height = window.innerHeight/sizes.zoom_out;
+  sizes.width = window.innerWidth/sizes.zoom_out;
+  sizes.height = window.innerHeight/sizes.zoom_out;
   sizes.switchSize = !sizes.switchSize;
   resizeWindow();
 }
@@ -85,8 +85,8 @@ const resizeWindow = () =>{
 }
 
 const render = () =>{
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
+  // cube.rotation.x += 0.01;
+  // cube.rotation.y += 0.01;
 
   renderer.render( scene, camera );
 
