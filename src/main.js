@@ -32,7 +32,7 @@ camera.position.z = 100;
 
 
 const loader = new GLTFLoader();
-loader.load('./models/practice.gltf', (gltf) => {
+loader.load('./models/exportThreejs.gltf', (gltf) => {
   const appartment = gltf.scene;
   appartment.traverse((child) => {
     if (child.isMesh) {
