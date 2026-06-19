@@ -1,6 +1,8 @@
 import "./style.scss";
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from "three/examples/jsm/Addons.js";
+import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
 
 const canvas = document.querySelector("#experience-canvas");
 const sizes ={
@@ -12,11 +14,12 @@ const sizes ={
 }
 
 const scene = new THREE.Scene();
+scene.background = new THREE.Color( 0x66c0ff);
 const camera = new THREE.PerspectiveCamera( 
   75, 
   sizes.width / sizes.height, 
   0.1,
-  1000
+  100000
 );
 
 const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
@@ -32,17 +35,28 @@ camera.position.z = 100;
 
 
 const loader = new GLTFLoader();
-loader.load('./models/exportThreejs.gltf', (gltf) => {
+loader.load('./models/exportThreejsNoOutlines.gltf', (gltf) => {
   const appartment = gltf.scene;
-  appartment.traverse((child) => {
-    if (child.isMesh) {
-      child.geometry.center();
-    }
-  });
   scene.add(appartment);
 });
 
+const light = new THREE.AmbientLight( 0x404040, 100 ); // soft white light
+scene.add( light );
+
+// const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+// scene.add( directionalLight );
+
 // Event Listeners & Functions 
+
+const controls = new OrbitControls( camera, renderer.domElement );
+// controls.update() must be called after any manual changes to the camera's transform
+camera.position.set( 0, 20, 100 );
+controls.update();
+function animate() {
+	// required if controls.enableDamping or controls.autoRotate are set to true
+	controls.update();
+	renderer.render( scene, camera );
+}
 
 document.body.addEventListener("keypress", (event)=> {
   if(event.key=="q" || event.key=="Q")
@@ -84,12 +98,14 @@ const resizeWindow = () =>{
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 }
 
+const effect = new OutlineEffect( renderer);
+
 const render = () =>{
   // cube.rotation.x += 0.01;
   // cube.rotation.y += 0.01;
-
+  
   renderer.render( scene, camera );
-
+  effect.render( scene, camera );
   window.requestAnimationFrame(render);
 }
 
