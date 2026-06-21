@@ -6,6 +6,10 @@ import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
 
 let CameraPosition1 = new THREE.Vector3(3.499, 33.030, -8.456);
 
+let buildingA;
+let buildingB;
+let buildingC;
+
 const canvas = document.querySelector("#experience-canvas");
 const sizes ={
   zoom_out:  1.5,
@@ -92,6 +96,10 @@ function animate() {
 	// required if controls.enableDamping or controls.autoRotate are set to true
 	// controls.update();
 	renderer.render( scene, camera );
+}
+
+function onClick(event) {
+  
 }
 
 document.body.addEventListener("keypress", (event)=> {
