@@ -74,23 +74,23 @@ directionalLight.shadow.camera.far = 3500;
 directionalLight.shadow.bias = - 0.0001;
 
 const dirLightHelper = new THREE.DirectionalLightHelper( directionalLight, 10 );
-scene.add( dirLightHelper );
+// scene.add( dirLightHelper );
 
 // Event Listeners & Functions 
 
-// const controls = new OrbitControls( camera, renderer.domElement );
-// controls.update() must be called after any manual changes to the camera's transform
-// camera.position.set( 0, 20, 100 );
-camera.position.set(-8, 25, 17);
+const controls = new OrbitControls( camera, renderer.domElement );
+controls.update() // must be called after any manual changes to the camera's transform
+camera.position.set( 20, 20, 30 );
+
 camera.rotation.x = THREE.MathUtils.degToRad(0);
 camera.rotation.y = THREE.MathUtils.degToRad(0);
 camera.rotation.z = THREE.MathUtils.degToRad(0);
 
-// controls.update();
+controls.update();
 
 function animate() {
 	// required if controls.enableDamping or controls.autoRotate are set to true
-	// controls.update();
+	controls.update();
 	renderer.render( scene, camera );
 }
 
